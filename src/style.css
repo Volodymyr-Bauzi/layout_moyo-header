@@ -1,3 +1,7 @@
+:root {
+  --blue: #00acdc;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -6,16 +10,20 @@ body {
   font-style: normal;
   width: 100%;
   font-size: 12px;
-  text-transform: uppercase;
-
-  --blue: #00acdc;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+}
+
+.image {
+  margin-left: 50px;
+}
+
+.nav {
+  margin-right: 50px;
 }
 
 .nav__list {
@@ -40,6 +48,7 @@ header {
 .nav__link {
   text-decoration: none;
   color: #000;
+  text-transform: uppercase;
 
   height: 60px;
   display: flex;
