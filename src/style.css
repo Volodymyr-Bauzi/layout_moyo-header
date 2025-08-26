@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   font-weight: 500;
   font-style: normal;
   width: 100%;
+  font-size: 12px;
 
   --blue: #00acdc;
 }
@@ -24,21 +26,27 @@ img {
   margin: 10px;
 }
 
+nav {
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
 ul {
   display: flex;
   list-style-type: none;
 }
 
 li {
-  text-align: center;
+  align-content: center;
   margin: 10px;
-  height: 100%;
 }
 
 a {
-  /* height: 15px; */
   text-decoration: none;
   color: #000;
+  line-height: 100%;
 }
 
 a:hover {
@@ -49,8 +57,11 @@ a[data-qa='hover'] {
   color: var(--blue);
 }
 
-.is-active {
+.is-active a {
   color: var(--blue);
+}
+
+.is-active {
   position: relative;
 }
 
@@ -60,6 +71,7 @@ a[data-qa='hover'] {
   width: auto;
   height: 4px;
   background-color: var(--blue);
+  border-radius: 8px;
   bottom: -18.5px;
   left: 0;
   right: 0;
